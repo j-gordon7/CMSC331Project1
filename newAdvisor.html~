@@ -10,7 +10,8 @@
 Name: <input type='text' name='Name'>
 <br/><br/>
 
-College you specialize in:  <select name='newStudentMajor'>
+College you specialize in:  <select name='college'>
+  <option value='Seclect an Option'> --Select an Option--</option>
   <option value='Biological Sciences BA'>Biological Sciences BA</option>
   <option value='Biological Sciences BS'>Biological Sciences BS</option>
   <option value='Biochemistry & Molecular Biology BS'>Biochemistry & Molecular Biology BS</option>
