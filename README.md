@@ -1,3 +1,5 @@
 # CMSC331Project1
 
-WHY ARE THERE SO MANY NIPS IN HERE
+Worked on by Aaron Lewis
+
+Ayy lmao
