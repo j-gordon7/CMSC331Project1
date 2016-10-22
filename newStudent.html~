@@ -1,0 +1,33 @@
+<html>
+<head>Basic Information (step 1 of 2)</head>
+<body>
+<form action='newstudent.php' method='post' name='form1'>
+
+<br/>
+
+StudentID:<input type='test' name='newStudentID'><br/><br/>
+
+First Name:<input type='text' name='newStudentFirstName'><br/><br/>
+
+Middle Initial:<input type='char' name='newStudentMiddleInitial'><br/><br/>
+
+Last Name:<input type='text' name='newStudentLastName'><br/><br/>
+
+Email:<input type='text' name='newStudentEmail'><br/><br/>
+
+Password:<input type='text' name='newStudentPassword'><br/><br/>
+
+Select Major:<select name='newStudentMajor'>
+				<option value='Biological Sciences BA'>Biological Sciences BA</option>
+				<option value='Biological Sciences BS'>Biological Sciences BS</option>
+				<option value='Biochemistry & Molecular Biology BS'>Biochemistry & Molecular Biology BS</option>
+				<option value='Bioinformatics & Computational Biology BS'>Bioinformatics & Computational Biology BS</option>
+				<option value='Biology Education BA'>Biology Education BA</option>
+				<option value='Chemistry BA'>Chemistry BA</option>
+				<option value='Chemistry BS'>Chemistry BS</option>
+				<option value='Chemistry Education BA'>Chemistry Education BA</option>
+			</select>
+<input type='submit'>	
+</form>
+</body>
+</html>

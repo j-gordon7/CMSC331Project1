@@ -1,25 +1,26 @@
 <?php
-//Include CommonMethods file
-include 'CommonMethods.php';
+  //$newStudentID = string($_POST['newStudentID']);
+  //$newStudentFirstName = string($_POST['newStudentFirstName']);
+  //$newStudentMiddleInitial = string($_POST['newStudentMiddleInitial']);
+  //$newStudentLastName = string($_POST['newStudentLastName']);
+  //$newStudentEmail = string($_POST['newStudentEmail']);
+  //$newStudentPassword = string($_POST['newStudentPassword']);
+  //$newStudentMajor = string($_POST['newStudentMajor']);
 
-//Establish database connection
-$common = new Common;
-$common.connect('Student Database');
+//var_dump($_POST); echo("<br>");
 
-//Get input from form
-$newStudentName = string($_POST['newStudentName']);
-$newStudentEmail = string($_POST['newStudentEmail']);
-$newStudentPassword = string($_POST['newStudentPassword']);
-$newStudentMajor = string($_POST['newStudentMajor']);
+include ('CommonMethods.php');
 
-//Validate with database and insert
-if (/*Check if an account already has that email*/) {
-	/*Spit out error message*/
-} else {
-	/*Create new student in database*/
-	common.executeQuery(/*Put query here*/);
-}
+$debug = true;
 
-//"INSERT INTO 'Student Database'('Student Key', 'Name', 'Email', 'Major', 'Has Scheduled Meeting', 'Password') VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])"//
+$COMMON = new Common($debug);
+
+$sql = "insert into Student_Info (`StudentID`, `FirstName`, `MiddleInitial`,
+ `LastName`, `Email`, `Password`, `Major`) values ('$_POST[newStudentID]',
+'$_POST[newStudentFirstName]','$_POST[newStudentMiddleInitial]',
+'$_POST[newStudentLastName]','$_POST[newStudentEmail]',
+'$_POST[newStudentPassword]','$_POST[newStudentMajor]')";
+
+$rs = $COMMON->executeQuery($sql, $_SEVER["SCRIPT_NAME"]);
 
 ?>
