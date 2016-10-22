@@ -2,25 +2,25 @@
 
 include('CommonMethods.php');
 
-$debug = true;
+$debug = false;
 $COMMON = new Common($debug);
 
-$newAdvisorName = string($_POST['Name']);
+$newAdvisorName = ($_POST['Name']);
 
-$newAdvisorCollege = string($_POST['college']);
+$newAdvisorCollege = ($_POST['College']);
 
-$newAdvisorOffice = string($_POST['office']);
+$newAdvisorOffice = ($_POST['Office']);
 
-$newAdvisorEmail = string($_POST['email']);
+$newAdvisorEmail = ($_POST['Adviser_Email']);
 
-$newAdvisorPhone = string($_POST['phone']);
+$newAdvisorPhone = ($_POST['Phone_Number']);
 
-$newAdvisorPassword = string($_POST['password']);
+$newAdvisorPassword = ($_POST['Password']);
 
-$newAdvisorPasswordConfirm = string($_POST['passwordConfirm']);
+$newAdvisorPasswordConfirm = ($_POST['passwordConfirm']);
 
-$sql = "INSERT INTO `AdvisorDatabase`(`Name`, `College`, `Office`, `Email`, `Phone Number`, `Password`) VALUES ($newAdvisorName,$newAdvisorCollege,$newAdvisorOffice,$newAdvisorEmail,$newAdvisorPhone,$newAdvisorPassword)";
+$sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`, `Password`, `Phone Number`) VALUES ('$newAdvisorEmail','$newAdvisorName','$newAdvisorCollege','$newAdvisorOffice','$newAdvisorPassword','$newAdvisorPhone')";
 
-$rs = $COMMON->executeQuery($sql, $_SERVER[
+$rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
 ?>
