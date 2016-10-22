@@ -1,0 +1,527 @@
+<html>
+<head>
+<title>Adviser Time Chart</title>
+</head>
+<body>
+
+<head>
+
+<form action='advisorMeetingSchedule.php' method='post' name='form1'>
+
+           &emsp;&emsp;&emsp;&emsp;Monday &emsp;&emsp;&emsp; Tuesday &emsp;&emsp;&emsp; Wednesday &emsp;&emsp;&emsp; Thursday &emsp;&emsp;&emsp; Friday
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0800M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0800Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0800W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0800Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0800F" value="none" checked> None
+
+<br>
+
+ 8:00 &emsp;        <input type="radio" name="0800M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0800Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0800W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0800Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0800F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0800M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0800Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0800W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0800Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0800F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0830M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0830Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0830W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0830Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0830F" value="none" checked> None
+
+<br>
+
+ 8:30 &emsp;        <input type="radio" name="0830M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0830Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0830W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0830Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0830F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0830M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0830Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0830W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0830Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0830F" value="group"> Group
+
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0900M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0900Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0900W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0900Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0900F" value="none" checked> None
+
+<br>
+
+ 9:00 &emsp;        <input type="radio" name="0900M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0900Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0900W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0900Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0900F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0900M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0900Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0900W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0900Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0900F" value="group"> Group
+
+ 
+
+<br><br>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+
+&emsp;&emsp;&emsp; <input type="radio" name="0930M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0930Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0930W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0930Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0930F" value="none" checked> None
+
+<br>
+
+9:30 &emsp;        <input type="radio" name="0930M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0930Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0930W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0930Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0930F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0900M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0930Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0930W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0930Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="09300F" value="group"> Group
+
+
+
+<br><br>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+
+
+&emsp;&emsp;&emsp; <input type="radio" name="1000M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1000Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1000W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1000Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1000F" value="none" checked> None
+
+<br>
+
+10:00 &emsp;        <input type="radio" name="1000M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1000Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1000W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1000Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1000F" value="single"> Single
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1000M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1000Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1000W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1000Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1000F" value="group"> Group
+
+
+
+<br><br>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+&emsp;&emsp;&emsp; <input type="radio" name="1030M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1030Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1030W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1030Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1030F" value="none" checked> None
+
+<br>
+
+10:30 &emsp;        <input type="radio" name="1030M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1030Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1030W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1030Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1030F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1030M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1030Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1030W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1030Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1030F" value="group"> Group
+
+
+
+<br><br>
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+&emsp;&emsp;&emsp; <input type="radio" name="1100M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1100Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1100W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1100Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1100F" value="none" checked> None
+
+<br>
+
+11:00 &emsp;        <input type="radio" name="1100M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1100Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1100W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1100Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1100F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1100M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1100Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1100W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1100Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1100F" value="group"> Group
+
+
+
+<br><br>
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+&emsp;&emsp;&emsp; <input type="radio" name="1130M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1130Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1130W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1130Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1130F" value="none" checked> None
+
+<br>
+
+11:30 &emsp;        <input type="radio" name="1130M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1130Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1130W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1130Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1130F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1130M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1130Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1130W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1130Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1130F" value="group"> Group
+
+
+
+<br><br>
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+&emsp;&emsp;&emsp; <input type="radio" name="1200M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1200Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1200W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1200Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1200F" value="none" checked> None
+
+<br>
+
+12:00 &emsp;        <input type="radio" name="1200M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1200Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1200W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1200Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1200F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1200M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1200Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1200W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1200Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1200F" value="group"> Group
+
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1230M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1230Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1230W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1230Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="1230F" value="none" checked> None
+
+<br>
+
+12:30 &emsp;        <input type="radio" name="1230M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1230Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1230W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1230Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="1230F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="1230M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1230Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1230W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1230Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="1230F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0100M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0100Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0100W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0100Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0100F" value="none" checked> None
+
+<br>
+
+1:00 &emsp;        <input type="radio" name="0100M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0100Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0100W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0100Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0100F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0100M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0100Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0100W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0100Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0100F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0130M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0130Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0130W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0130Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0130F" value="none" checked> None
+
+<br>
+
+1:30 &emsp;        <input type="radio" name="0130M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0130Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0130W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0130Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0130F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0130M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0130Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0130W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0130Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0130F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0200M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0200Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0200W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0200Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0200F" value="none" checked> None
+
+<br>
+
+2:00 &emsp;        <input type="radio" name="0200M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0200Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0200W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0200Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0200F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0200M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0200Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0200W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0200Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0200F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0230M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0230Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0230W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0230Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0230F" value="none" checked> None
+
+<br>
+
+2:30 &emsp;        <input type="radio" name="0230M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0230Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0230W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0230Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0230F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0230M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0230Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0230W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0230Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0230F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0300M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0300Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0300W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0300Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0300F" value="none" checked> None
+
+<br>
+
+3:00 &emsp;        <input type="radio" name="0300M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0300Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0300W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0300Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0300F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0300M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0300Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0300W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0300Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0300F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0330M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0330Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0330W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0330Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0330F" value="none" checked> None
+
+<br>
+
+3:30 &emsp;        <input type="radio" name="0330" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0330Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0330W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0330Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0330F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0330M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0330Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0330W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0330Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0330F" value="group"> Group
+
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0400M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0400Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0400W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0400Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0400F" value="none" checked> None
+
+<br>
+
+4:00 &emsp;        <input type="radio" name="0400M" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0400Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0400W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0400Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0400F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0400M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0400Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0400W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0400Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0400F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+
+<br><br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0430M" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0430Tu" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0430W" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0430Th" value="none" checked> None
+&emsp;&emsp;&emsp; <input type="radio" name="0430F" value="none" checked> None
+
+<br>
+
+4:30 &emsp;        <input type="radio" name="0430" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0430Tu" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0430W" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0430Th" value="single"> Single
+&thinsp;&thinsp;&thinsp;&emsp;&emsp; <input type="radio" name="0430F" value="single"> Single
+
+
+
+<br>
+
+&emsp;&emsp;&emsp; <input type="radio" name="0430M" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0430Tu" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0430W" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0430Th" value="group"> Group
+&ensp;&thinsp;&emsp;&emsp; <input type="radio" name="0430F" value="group"> Group
+<!-- --------------------------------------------------------------------------------------------------------------------------  -->
+  
+</form>
+
+
+</body>
+</html>
