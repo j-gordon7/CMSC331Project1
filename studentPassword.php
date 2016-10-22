@@ -2,11 +2,23 @@
 
 include('CommonMethods.php');
 
-var_dump($_POST);
+$email = (string)($_POST['email']);
+$password = (string)($_POST['password']);
 
 $debug = true;
 $COMMON = new Common($debug);
 
-$sql = "select * from 'Student Database' where 'Name' = and '$_POST'"
+$sql = "SELECT * FROM `Student_Info` WHERE `Email` = '$email' ";
 
+$rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
+$row = (mysql_fetch_assoc($rs));
+$stored_password = $row['Password'];
+
+if ($password != $stored_password) {
+  header('Location: home.html');
+}
+
+else {
+  echo("IT WORKED");
+}
 ?>
