@@ -8,14 +8,14 @@ $password = (string)($_POST['password']);
 $debug = false;
 $COMMON = new Common($debug);
 
-$sql = "SELECT * FROM `Student_Info` WHERE `Email` = '$email' ";
+$sql = "SELECT * FROM `Adviser_Info` WHERE `Adviser Email` = '$email' ";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 $row = (mysql_fetch_assoc($rs));
 $stored_password = $row['Password'];
 
 if ($password != $stored_password) {
-  header('Location: error_Student_home.html');
+  header('Location: error_Advisor_home.html');
 }
 
 else {

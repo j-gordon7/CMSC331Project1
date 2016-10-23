@@ -23,4 +23,6 @@ $sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`,
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
+header('Location: advisorMeetingSchedule');
+
 ?>
