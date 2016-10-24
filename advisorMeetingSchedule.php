@@ -5,7 +5,8 @@ include('CommonMethods.php');
 $debug = false;
 $COMMON = new Common($debug);
 
-$email = "test words";
+session_start();
+$email = $_SESSION['Adviser_Email'];
 
 $dateTime = 8001;
 
@@ -23,17 +24,12 @@ while ($dateTime > 8000 || $dateTime < 4312){
 
   $choiceOfMeeting = $meetingChoice%10;
 
-
-
-
   //sends the stuff
   $sql = "INSERT INTO `Advisor_Time_Input`(`Advisor Email`, `Time Slot`, `Day of Week`, `Choice of meeting`) VALUES ('$email','$timeSlot','$dayOfWeek','$choiceOfMeeting')";
   
-  $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
-  
-
-
-
+  if ($choiceOfMeeting != 1) {
+    $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
+  }
 
   //iterates through the times  
   $dateTime = $dateTime + 1;
@@ -50,7 +46,5 @@ while ($dateTime > 8000 || $dateTime < 4312){
     $dateTime = 1001;
   }
 }
-
-
 
 ?>
