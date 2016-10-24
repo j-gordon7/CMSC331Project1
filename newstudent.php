@@ -7,6 +7,9 @@ $newStudentEmail = (string)($_POST['newStudentEmail']);
 $newStudentPassword = (string)($_POST['newStudentPassword']);
 $newStudentMajor = (string)($_POST['newStudentMajor']);
 
+session_start();
+$_SESSION['Student_Email'] = $newStudentEmail;
+
 include ('CommonMethods.php');
 
 $debug = false;
