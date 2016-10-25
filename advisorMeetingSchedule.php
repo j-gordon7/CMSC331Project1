@@ -29,12 +29,15 @@ while ($dateTime > 8000 || $dateTime < 4312){
   $sql = "INSERT INTO `Advisor_Time_Input`(`Advisor Email`, `Time Slot`, `Day of Week`, `Choice of meeting`) VALUES ('$email','$timeSlot','$dayOfWeek','$choiceOfMeeting')";
 
   $sql2 = "INSERT INTO `Inactive Appointments`(`Time`, `Day`, `Type`, `Advisor_Email`) VALUES ('$timeSlot','$dayOfWeek','$choiceOfMeeting','$email')";
-  
+
+    
   if ($choiceOfMeeting != 1) {
     $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
     $rs2 = $COMMON2->executeQuery($sql2, $_SERVER['SCRIPT_NAME']);
   }
 
+
+  //adds 10 slots for a group appointment
   if ($choiceOfMeeting > 2) {
     for ($i = 0; $i < 9; $i++) {
       $rs2 = $COMMON2->executeQuery($sql2, $_SERVER['SCRIPT_NAME']);

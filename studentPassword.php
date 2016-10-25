@@ -19,6 +19,8 @@ if ($password != $stored_password || empty($password) || empty($email)) {
 }
 
 else {
-  echo("it worked");
+  session_start();
+  $_SESSION['Student_Email'] = $email;
+  header('Location: returningStudent.php');
 }
 ?>

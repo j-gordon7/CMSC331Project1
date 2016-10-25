@@ -19,6 +19,6 @@ if ($password != $stored_password || empty($password) || empty($email)){
 }
 
 else {
-  echo("IT WORKED");
+  header('Location: returningAdvisor.html');
 }
 ?>
