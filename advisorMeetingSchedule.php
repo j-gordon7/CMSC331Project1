@@ -13,10 +13,8 @@ $dateTime = 8001;
 
 while ($dateTime > 8000 || $dateTime < 4312){
 
-
   //gets the info
   $meetingChoice = $_POST[$dateTime];
-  
 
   //parses the needed info
   $timeSlot = floor($meetingChoice/100);
@@ -58,6 +56,8 @@ while ($dateTime > 8000 || $dateTime < 4312){
   if ($dateTime > 13000){
     $dateTime = 1001;
   }
+
+  header("Location: returningAdvisor.php");
 }
 
 ?>
