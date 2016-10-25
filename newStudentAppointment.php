@@ -16,7 +16,16 @@ session_start();
 $studentEmail = (string)$_SESSION['Student_Email'];
 
 $sql = "SELECT * FROM `Inactive Appointments` WHERE `Time` = '$AppTime' && `Day` = '$AppDay' && `Type` = '$AppType'";
+
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
+
+//checks to see if a match
+if (mysql_num_rows($rs) == 0)
+  header('Location: error_newStudentAppointment.html');
+
+
+else{
+
 $row = (mysql_fetch_assoc($rs));
 
 $Advisor_Email = (string)$row['Advisor_Email'];
@@ -28,5 +37,5 @@ $Code = (int)$row['Code'];
 
 $sql3 = "DELETE FROM `Inactive Appointments` WHERE `Code` = '$Code'";
 $rs3 = $COMMON3->executeQuery($sql3, $_SERVER['SCRIPT_NAME']);
-
+}
 ?>
