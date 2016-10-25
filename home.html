@@ -6,15 +6,18 @@
 
 <head>
 
+<!-- -->
 For new Students or Advisors
 <br/><br/>
 
+<!--Button to create a new student. Links to newStudent.html-->
 <form method="post" action='newStudent.html'>
 <button type="submit">
 NEW STUDENT
 </button>
 </form>
 
+<!--Button to create a new advisor. Links to newAdvisor.html-->
 <form method="post" action='newAdvisor.html'>
 <button type="submit">
 NEW ADVISOR
@@ -24,6 +27,8 @@ NEW ADVISOR
 For returning Students or Advisors
 <br/><br/>
 
+<!--Student Login. Posts to studentPassword.php-->
+<!--Takes in an email and password-->
 Student
 <form action='studentPassword.php' method='post'>
 email:<input type='text' name='email'>
@@ -31,6 +36,9 @@ password:<input type='text' name='password'>
 <input type = 'submit'>
 </form>
 
+<!-- -->
+<!--Advisor Login. Posts to advisorPassword.php-->
+<!--Takes in an email and password-->
 Advisor
 <form action='advisorPassword.php' method='post'>
 email:<input type='text' name='email'>
