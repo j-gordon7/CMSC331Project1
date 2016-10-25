@@ -1,4 +1,3 @@
-<!--This page is for the entering of parameters for a new student into the student_info database-->
 <html>
 <head>Basic Information (step 1 of 2)</head>
 <body>
@@ -6,26 +5,16 @@
 
 <br/>
 
-<!--Get student ID-->
 StudentID:<input type='test' name='newStudentID'><br/><br/>
 
-<!--Get Student Last Name-->
 First Name:<input type='text' name='newStudentFirstName'><br/><br/>
 
-<!--Get Student Middle Initial-->
 Middle Initial:<input type='text' name='newStudentMiddleInitial'><br/><br/>
 
-<!--Get Student Last Name-->
 Last Name:<input type='text' name='newStudentLastName'><br/><br/>
 
-<!--Get Student Email-->
 Email:<input type='text' name='newStudentEmail'><br/><br/>
 
-<!--Get Student Password-->
-Password (Will be used if changes for advising are needed):<br/>
-<input type='text' name='newStudentPassword'><br/><br/>
-
-<!--Get Major from drop down list-->
 Select Major:<select name='newStudentMajor'>
 				<option value='Biological Sciences BA'>Biological Sciences BA</option>
 				<option value='Biological Sciences BS'>Biological Sciences BS</option>
@@ -36,8 +25,15 @@ Select Major:<select name='newStudentMajor'>
 				<option value='Chemistry BS'>Chemistry BS</option>
 				<option value='Chemistry Education BA'>Chemistry Education BA</option>
 			</select>
-			
-<!--Submit button-->
+<br/><br/>
+Questions or Concerns that you would like brought up during advising: <br/>
+<textarea rows="4" cols="50" name = "Student_Questions"> </textarea>
+
+<br/><br/>
+
+Password (Will be used if changes for advising are needed):<br/>
+<input type='text' name='newStudentPassword'><br/><br/>
+
 <input type='submit'>	
 </form>
 </body>
