@@ -14,7 +14,7 @@ $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 $row = (mysql_fetch_assoc($rs));
 $stored_password = $row['Password'];
 
-if ($password != $stored_password) {
+if ($password != $stored_password || empty($password) || empty($email)){
   header('Location: error_Advisor_home.html');
 }
 
