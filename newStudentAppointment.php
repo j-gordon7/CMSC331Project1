@@ -6,7 +6,7 @@ $AppType = (int)$_POST['appointmentType'];
 
 include('CommonMethods.php');
 
-$debug = true;
+$debug = false;
 
 $COMMON = new Common($debug);
 $COMMON2 = new Common($debug);
@@ -37,5 +37,7 @@ $Code = (int)$row['Code'];
 
 $sql3 = "DELETE FROM `Inactive Appointments` WHERE `Code` = '$Code'";
 $rs3 = $COMMON3->executeQuery($sql3, $_SERVER['SCRIPT_NAME']);
+
+header("Location: returningStudent.php");
 }
 ?>

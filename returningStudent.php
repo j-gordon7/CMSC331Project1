@@ -11,6 +11,8 @@
 <?php
 include('CommonMethods.php');
 
+echo("Thank you for making an appointment!\n");
+
 $debug = false;
 
 $COMMON = new Common($debug);
@@ -25,7 +27,7 @@ $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
 $row = (mysql_fetch_assoc($rs));
 
-echo("You have ");
+echo("You have your");
 
 if ($row['Type'] == 2)
   echo("an individual ");
@@ -66,8 +68,8 @@ echo("Friday ");
 ?>
 <br>
 <button type="submit"> Cancel Appointment </button>
-</form>
 
+</form>
 </body>
 </html>
 
