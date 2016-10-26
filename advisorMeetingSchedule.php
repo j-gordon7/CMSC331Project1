@@ -57,7 +57,8 @@ while ($dateTime > 8000 || $dateTime < 4312){
     $dateTime = 1001;
   }
 
-  header("Location: returningAdvisor.php");
 }
+
+header("Location: returningAdvisor.php");
 
 ?>

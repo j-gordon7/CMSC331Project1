@@ -5,7 +5,7 @@ include('CommonMethods.php');
 $debug = false;
 $COMMON = new Common($debug);
 
-if ($_POST['Name'] == '' || $_POST['adviser_Email'] == '' || $_POST['Password'] == '' || $_POST['Office'] == '') {
+if ($_POST['Name'] == '' || $_POST['Adviser_Email'] == '' || $_POST['Password'] == '' || $_POST['Office'] == '') {
   header('Location: newAdvisor_error.html');
 }
 
