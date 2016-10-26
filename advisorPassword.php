@@ -19,6 +19,8 @@ if ($password != $stored_password || empty($password) || empty($email)){
 }
 
 else {
-  header('Location: returningAdvisor.html');
+  session_start();
+  $_SESSION['Advisor_Email'] = $email;
+  header('Location: returningAdvisor.php');
 }
 ?>
