@@ -11,7 +11,8 @@
 <?php
 include('CommonMethods.php');
 
-echo("Thank you for making an appointment!\n");
+echo("Thank you for making an appointment!");
+echo("<br/><br/>");
 
 $debug = false;
 
@@ -20,20 +21,19 @@ $COMMON = new Common($debug);
 session_start();
 $studentEmail = (string)$_SESSION['Student_Email'];
 
-
 $sql = "SELECT * FROM `Active Appointments` WHERE `Student_Email` = '$studentEmail'";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
 $row = (mysql_fetch_assoc($rs));
 
-echo("You have your");
+echo("You have ");
 
 if ($row['Type'] == 2)
-  echo("an individual ");
+  echo(" an individual ");
 
 else{
-  echo("a group ");
+  echo(" a group ");
 }
 
 echo("advising appointment at: ");
@@ -62,8 +62,19 @@ else if ($row['Day'] == 5){
 echo("Friday ");
 }
 
+echo("in room: ");
 
+$sql2 = "SELECT * FROM `Adviser_Info` WHERE `Adviser Email` = '$row[Advisor_Email]'";
+$rs2 = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
+$row2 = (mysql_fetch_assoc($rs2));
 
+if ($row['Type'] == 2)
+  echo($row2['Individual Location']);
+
+else{
+  echo($row2['Group Location']);
+
+}
 
 ?>
 <br>

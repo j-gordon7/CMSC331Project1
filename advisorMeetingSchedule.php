@@ -7,7 +7,7 @@ $COMMON = new Common($debug);
 $COMMON2 = new Common($debug);
 
 session_start();
-$email = $_SESSION['Adviser_Email'];
+$email = $_SESSION['Advisor_Email'];
 
 $dateTime = 8001;
 

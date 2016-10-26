@@ -6,7 +6,7 @@ $debug = false;
 $COMMON = new Common($debug);
 
 session_start();
-$_SESSION['Adviser_Email'] = $_POST['Adviser_Email'];
+$_SESSION['Advisor_Email'] = $_POST['Adviser_Email'];
 
 $newAdvisorName = ($_POST['Name']);
 $newAdvisorCollege = ($_POST['College']);
@@ -15,8 +15,10 @@ $newAdvisorEmail = ($_POST['Adviser_Email']);
 $newAdvisorPhone = ($_POST['Phone_Number']);
 $newAdvisorPassword = ($_POST['Password']);
 $newAdvisorPasswordConfirm = ($_POST['passwordConfirm']);
+$newIndMeeting = ($_POST['IndMeeting']);
+$newGroupMeeting = ($_POST['GroMeeting']);
 
-$sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`, `Password`, `Phone Number`) VALUES ('$newAdvisorEmail','$newAdvisorName','$newAdvisorCollege','$newAdvisorOffice','$newAdvisorPassword','$newAdvisorPhone')";
+$sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`, `Group Location`, `Individual Location`,`Password`, `Phone Number`) VALUES ('$newAdvisorEmail','$newAdvisorName','$newAdvisorCollege','$newAdvisorOffice','$newIndMeeting','$newGroupMeeting','$newAdvisorPassword','$newAdvisorPhone')";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 

@@ -1,4 +1,9 @@
 <?php
+
+if (($_POST['newStudentID'] == '') || ($_POST['newStudentFirstName'] == '') || ($_POST['newStudentLastName'] == '') || ($_POST['newStudentEmail'] == '') || ($_POST['newStudentPassword'] == '')) {
+  header('Location: newStudent_error.html');
+}
+
 $newStudentID = (string)($_POST['newStudentID']);
 $newStudentFirstName = (string)($_POST['newStudentFirstName']);
 $newStudentMiddleInitial = (string)($_POST['newStudentMiddleInitial']);
