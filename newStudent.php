@@ -4,6 +4,7 @@ if (($_POST['newStudentID'] == '') || ($_POST['newStudentFirstName'] == '') || (
   header('Location: newStudent_error.html');
 }
 
+else {
 $newStudentID = (string)($_POST['newStudentID']);
 $newStudentFirstName = (string)($_POST['newStudentFirstName']);
 $newStudentMiddleInitial = (string)($_POST['newStudentMiddleInitial']);
@@ -27,5 +28,5 @@ $sql = "INSERT INTO `Student_Info`(`StudentID`, `FirstName`, `MiddleInitial`, `L
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
 header('Location: newStudentAppointment.html');
-
+}
 ?>

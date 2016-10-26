@@ -5,6 +5,11 @@ include('CommonMethods.php');
 $debug = false;
 $COMMON = new Common($debug);
 
+if ($_POST['Name'] == '' || $_POST['adviser_Email'] == '' || $_POST['Password'] == '' || $_POST['Office'] == '') {
+  header('Location: newAdvisor_error.html');
+}
+
+else {
 session_start();
 $_SESSION['Advisor_Email'] = $_POST['Adviser_Email'];
 
@@ -14,7 +19,6 @@ $newAdvisorOffice = ($_POST['Office']);
 $newAdvisorEmail = ($_POST['Adviser_Email']);
 $newAdvisorPhone = ($_POST['Phone_Number']);
 $newAdvisorPassword = ($_POST['Password']);
-$newAdvisorPasswordConfirm = ($_POST['passwordConfirm']);
 $newIndMeeting = ($_POST['IndMeeting']);
 $newGroupMeeting = ($_POST['GroMeeting']);
 
@@ -23,5 +27,5 @@ $sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`,
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
 header('Location: advisorMeetingSchedule.html');
-
+}
 ?>
