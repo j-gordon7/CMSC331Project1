@@ -2,6 +2,7 @@
 
 include('CommonMethods.php');
 
+//gets the info typed on home.html
 $email = (string)($_POST['email']);
 $password = (string)($_POST['password']);
 
@@ -14,6 +15,7 @@ $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 $row = (mysql_fetch_assoc($rs));
 $stored_password = $row['Password'];
 
+//compares typed info with info from the database, goes to error state if no match
 if ($password != $stored_password || empty($password) || empty($email)) {
   header('Location: error_Student_home.html');
 }

@@ -1,5 +1,6 @@
 <?php
 
+  //saves info from html
 $AppTime = (int)$_POST['appointmentTime'];
 $AppDay = (int)$_POST['appointmentDay'];
 $AppType = (int)$_POST['appointmentType'];
@@ -7,7 +8,7 @@ $AppType = (int)$_POST['appointmentType'];
 include('CommonMethods.php');
 
 $debug = false;
-
+//sets up the three common vars
 $COMMON = new Common($debug);
 $COMMON2 = new Common($debug);
 $COMMON3 = new Common($debug);
@@ -15,6 +16,7 @@ $COMMON3 = new Common($debug);
 session_start();
 $studentEmail = (string)$_SESSION['Student_Email'];
 
+//saves code for mysql
 $sql = "SELECT * FROM `Inactive Appointments` WHERE `Time` = '$AppTime' && `Day` = '$AppDay' && `Type` = '$AppType'";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
@@ -26,6 +28,7 @@ if (mysql_num_rows($rs) == 0)
 
 else{
 
+  //adds the time to the advisor's table and deletes it from the open list of times
 $row = (mysql_fetch_assoc($rs));
 
 $Advisor_Email = (string)$row['Advisor_Email'];

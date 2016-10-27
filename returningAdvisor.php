@@ -47,9 +47,10 @@ $sql2 = "SELECT * FROM `Active Appointments` WHERE `Time` = '$appTime' && `Day` 
 
 $rs2 = $COMMON2->executeQuery($sql2, $_SERVER['SCRIPT_NAME']);
 	
-	//Determine if it is a group or individual appointment
+//Determine if it is a group or individual appointment
 if ($appointment['Choice of meeting'] == 3) {
-		//Group appointment -> Display all students/IDs in this appointment
+  
+//Group appointment -> Display all students/IDs in this appointment
 $COMMON3 = new Common($debug);
 
   echo(" Students: ");

@@ -4,6 +4,7 @@ include('CommonMethods.php');
 
 $debug = true;
 
+//sets up common vars
 $COMMON = new Common($debug);
 $COMMON2 = new Common($debug);
 $COMMON3 = new Common($debug);
@@ -11,6 +12,7 @@ $COMMON3 = new Common($debug);
 session_start();
 $studentEmail = (string)$_SESSION['Student_Email'];
 
+//finds the info
 $sql = "SELECT * FROM `Active Appointments` WHERE `Student_Email` = '$studentEmail'";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
@@ -23,7 +25,8 @@ if (mysql_num_rows($rs) == 0)
 else{
 
   $row = (mysql_fetch_assoc($rs));
-
+  
+  //saves the appointment data so that the info can be moved to the inactive database
   $AppTime = (int)$row['Time'];
   $AppDay = (int)$row['Day'];
   $AppType = (int)$row['Type'];

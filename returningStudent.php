@@ -21,6 +21,7 @@ $COMMON = new Common($debug);
 session_start();
 $studentEmail = (string)$_SESSION['Student_Email'];
 
+//gets the students info from the database
 $sql = "SELECT * FROM `Active Appointments` WHERE `Student_Email` = '$studentEmail'";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
@@ -29,6 +30,7 @@ $row = (mysql_fetch_assoc($rs));
 
 echo("You have ");
 
+//gets the type of appointment and parses it
 if ($row['Type'] == 2)
   echo(" an individual ");
 
@@ -38,10 +40,12 @@ else{
 
 echo("advising appointment at: ");
 
+//gets the time back
 echo($row['Time']);
 
 echo(" on ");
 
+//parses the days into words from numbers
 if($row['Day'] == 1){
 echo("Monday ");
 } 
@@ -62,6 +66,7 @@ else if ($row['Day'] == 5){
 echo("Friday ");
 }
 
+//gets the room from the advisor's info for where the meeting is
 echo("in room: ");
 
 $sql2 = "SELECT * FROM `Adviser_Info` WHERE `Adviser Email` = '$row[Advisor_Email]'";
