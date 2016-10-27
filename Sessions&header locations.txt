@@ -1,0 +1,34 @@
+$_SESSION's:
+
+	newStudent.php: saves the new student's email, line 18
+	newStudentAppointment.php: gets the student's email, line 17
+	returningStudent.php: gets the student's email, line 22
+	studentPassword.php: saves email into session, line 25
+	advisorPassword.php: saves email into session, line 25
+	newAdvisor.php: saves new advisor's email, line 15
+	advisorMeetingSchedule.php: gets email, line 10
+	returningAdvisor.php: gets email, line 110
+	
+	
+
+header's:
+
+	newStudent.php: newStudentAppointment.html, line 30
+	newStudent.php: newStudent_error.html, line 5
+	
+	newStudentAppointment.php: error_newStudentAppointment.html, line 26
+	newStudentAppointment.php: returningStudent.php, line 44
+	
+	removeStudentAppointment.php: newStudentAppointment.html, line 22
+	removeStudentAppointment.php: newStudentAppointment.html, line 41
+	
+	studentPassword.php: error_Student_home.html, line 20
+	studentPassword.php: returningStudent.php, line 
+	
+	advisorPassword.php: error_Advisor_home.html, line 20
+	advisorPassword.php: returningAdvisor.php, line 26
+	
+	newAdvisor.php: newAdvisor_error.html, line 10
+	newAdvisor.php: advisorMeetingSchedule.html, line 30
+
+	advisorMeetingSchedule.php: returningAdvisor.php, line 62
