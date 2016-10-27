@@ -1,5 +1,17 @@
 <?php
 
+/*****************************************
+ ** File:    advisorMeetingSchedule.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** uses the info that the advisor enters
+ ** to make the appointments
+ **
+ **
+ **
+ ***********************************************/
+
 include('CommonMethods.php');
 
 $debug = false;

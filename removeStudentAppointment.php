@@ -1,5 +1,18 @@
 <?php
 
+/*****************************************
+ ** File:    removeStudentAppointment.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** removes a student's appointment if they cancel
+ ** it
+ **
+ **
+ ***********************************************/
+
+
+
 include('CommonMethods.php');
 
 $debug = true;

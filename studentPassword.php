@@ -1,5 +1,18 @@
 <?php
 
+/*****************************************
+ ** File:    studentPassword.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** This file handles the password verifiation
+ ** for students re-logging in.
+ **
+ **
+ **
+ **
+ ***********************************************/
+
 include('CommonMethods.php');
 
 //gets the info typed on home.html

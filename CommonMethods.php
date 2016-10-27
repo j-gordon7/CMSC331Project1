@@ -1,5 +1,17 @@
 <?php 
 
+/*****************************************
+ ** File:    CommonMethods.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** Standard common methods file with our database
+ ** 
+ **
+ **
+ **
+ ***********************************************/
+
 class Common
 {	
 	var $conn;

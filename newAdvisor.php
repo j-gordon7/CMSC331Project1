@@ -1,5 +1,17 @@
 <?php
 
+/*****************************************
+ ** File:    newAdvisor.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** sends the data the advisor entered to the 
+ ** database tables
+ **
+ **
+ **
+ ***********************************************/
+
 include('CommonMethods.php');
 
 $debug = false;

@@ -1,5 +1,17 @@
 <?php
 
+/*****************************************
+ ** File:    newStudent.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** Sends the student data to the database
+ **
+ **
+ **
+ **
+ ***********************************************/
+
   //checks to see if everything was entered
 if (($_POST['newStudentID'] == '') || ($_POST['newStudentFirstName'] == '') || ($_POST['newStudentLastName'] == '') || ($_POST['newStudentEmail'] == '') || ($_POST['newStudentPassword'] == '')) {
   header('Location: newStudent_error.html');

@@ -4,6 +4,18 @@
 </head>
 <body>
 
+/*****************************************
+ ** File:    returningAdvisor.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** Prints out the data of the appointments
+ ** for the advisor
+ **
+ **
+ **
+ ***********************************************/
+
 <head>
 
 

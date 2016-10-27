@@ -1,5 +1,17 @@
 <?php
 
+/*****************************************
+ ** File:    newStudentAppointment.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** Sets up the student's appointment if avalible
+ **
+ **
+ **
+ **
+ ***********************************************/
+
   //saves info from html
 $AppTime = (int)$_POST['appointmentTime'];
 $AppDay = (int)$_POST['appointmentDay'];

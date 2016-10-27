@@ -1,5 +1,18 @@
 <?php
 
+/*****************************************
+ ** File:    advisorPassword.php
+ ** Project: CMSC 331 Project 1, Fall 2016
+ ** Date:    10/28/16
+ ** 
+ ** This file handles the password verifiation
+ ** for advisors re-logging in.
+ **
+ **
+ **
+ **
+ ***********************************************/
+
 include('CommonMethods.php');
 
 //gets info from home.html
