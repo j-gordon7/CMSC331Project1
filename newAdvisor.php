@@ -18,7 +18,7 @@ $debug = false;
 $COMMON = new Common($debug);
 
 //check for all info
-if ($_POST['Name'] == '' || $_POST['Adviser_Email'] == '' || $_POST['Password'] == '' || $_POST['Office'] == '') {
+if ($_POST['Name'] == '' || $_POST['Adviser_Email'] == '' || $_POST['Password'] == '' || ($_POST['IndMeeting'] == '' && $_POST['GroMeeting'])) {
   header('Location: newAdvisor_error.html');
 }
 

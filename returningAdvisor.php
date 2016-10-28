@@ -4,6 +4,9 @@
 </head>
 <body>
 <head>
+
+These are your Appointments;
+<br/><br/>
 <?php
 
  /*****************************************
@@ -64,7 +67,7 @@ if ($appointment['Choice of meeting'] == 3) {
 $COMMON3 = new Common($debug);
 
   echo(" Students: ");
-  echo"<br/>";
+  echo"<br/><br/>";
   
   while($row2 = mysql_fetch_assoc($rs2)) {
     
@@ -76,8 +79,10 @@ $COMMON3 = new Common($debug);
     echo($row3['FirstName']);
     echo (" ");
     echo($row3['LastName']);
+    echo ("<br/>");
     echo (" Student ID: ");
     echo ($row3['StudentID']);
+    echo ("<br/>");
     echo (" Email: ");
     echo ($row3["Email"]);
     echo ("<br/>");
@@ -89,20 +94,22 @@ $COMMON3 = new Common($debug);
 } else {
   //Individual appointment -> Display just that students name and ID
   echo(" Student: ");
-  echo"<br/>";
+  echo"<br/><br/>";
   $row2 = mysql_fetch_assoc($rs2);
   $COMMON3 = new Common($debug);
   if (empty($row2) == false) {
   $semail = (string)$row2['Student_Email'];
   $sql3 = "SELECT * FROM `Student_Info` WHERE `Email` = '$semail'";
-  $rs3 = $COMMON3->executeQuery($sql2, $_SERVER['SCRIPT_NAME']);
+  $rs3 = $COMMON3->executeQuery($sql3, $_SERVER['SCRIPT_NAME']);
   $row3 = mysql_fetch_assoc($rs3);
   echo("Name: ");
   echo($row3['FirstName']);
   echo (" ");
   echo($row3['LastName']);
+  echo ("<br/>");
   echo (" Student ID: ");
   echo ($row3['StudentID']);
+  echo ("<br/>");
   echo (" Email: ");
   echo ($row3["Email"]);
   echo ("<br/>");
