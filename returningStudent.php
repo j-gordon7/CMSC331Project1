@@ -3,24 +3,25 @@
 <title>STUDENT PROFILE</title>
 </head>
 <body>
-
-/*****************************************
- ** File:    returningStudent.php
- ** Project: CMSC 331 Project 1, Fall 2016
- ** Date:    10/28/16
- ** 
- ** Prints out the student's appointment and 
- ** gives them the option to cancel it
- **
- **
- **
- ***********************************************/
-
 <head>
 
 <form method="post" action='removeStudentAppointment.php'>
 
 <?php
+
+
+   /*****************************************
+    ** File:    returningStudent.php
+    ** Project: CMSC 331 Project 1, Fall 2016
+    ** Date:    10/28/16
+    **
+    ** Prints out the student's appointment and
+    ** gives them the option to cancel it
+    **
+    **
+    **
+    ***********************************************/
+
 include('CommonMethods.php');
 
 echo("Thank you for making an appointment!");
@@ -82,7 +83,7 @@ echo("Friday ");
 echo("in room: ");
 
 $sql2 = "SELECT * FROM `Adviser_Info` WHERE `Adviser Email` = '$row[Advisor_Email]'";
-$rs2 = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
+$rs2 = $COMMON->executeQuery($sql2, $_SERVER['SCRIPT_NAME']);
 $row2 = (mysql_fetch_assoc($rs2));
 
 if ($row['Type'] == 2)
