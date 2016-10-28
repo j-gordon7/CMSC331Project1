@@ -37,7 +37,7 @@ $newIndMeeting = ($_POST['IndMeeting']);
 $newGroupMeeting = ($_POST['GroMeeting']);
 
 //saves to database
-$sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`, `Group Location`, `Individual Location`,`Password`, `Phone Number`) VALUES ('$newAdvisorEmail','$newAdvisorName','$newAdvisorCollege','$newAdvisorOffice','$newIndMeeting','$newGroupMeeting','$newAdvisorPassword','$newAdvisorPhone')";
+$sql = "INSERT INTO `Adviser_Info`(`Adviser Email`, `Name`, `College`, `Office`, `Group Location`, `Individual Location`,`Password`, `Phone Number`) VALUES ('$newAdvisorEmail','$newAdvisorName','$newAdvisorCollege','$newAdvisorOffice','$newGroupMeeting','$newIndMeeting','$newAdvisorPassword','$newAdvisorPhone')";
 
 $rs = $COMMON->executeQuery($sql, $_SERVER['SCRIPT_NAME']);
 
